@@ -1,0 +1,55 @@
+{
+  "name": "@etienne-dldc/esm-ts-experiment",
+  "version": "0.0.0",
+  "description": "Package to experiment with ESM in NPM packages",
+  "keywords": [],
+  "homepage": "https://github.com/etienne-dldc/esm-ts-experiment#readme",
+  "bugs": {
+    "url": "https://github.com/etienne-dldc/esm-ts-experiment/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etienne-dldc/esm-ts-experiment.git"
+  },
+  "license": "MIT",
+  "author": "Etienne Dldc",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "pub": "npx np",
+    "prepublish": "tsc",
+    "test": "c8 --reporter=html --reporter=text ava",
+    "test:watch": "ava --watch"
+  },
+  "ava": {
+    "extensions": {
+      "ts": "module"
+    },
+    "nodeArguments": [
+      "--loader=ts-node/esm"
+    ],
+    "nonSemVerExperiments": {
+      "configurableModuleFormat": true
+    }
+  },
+  "dependencies": {
+    "tslib": "^2.2.0"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "c8": "^7.7.2",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

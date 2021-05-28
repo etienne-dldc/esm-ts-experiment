@@ -1,2 +1,3 @@
 # esm-ts-experiment
-Package to experiment with ESM in NPM packages
+
+Package to experiment with ESM and TypeScript in NPM packages
