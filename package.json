@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "pub": "yarn build && npx np",
+    "release": "yarn build && npx np",
     "prepublish": "tsc",
     "test": "c8 --reporter=html --reporter=text ava",
     "test:watch": "ava --watch"
@@ -50,6 +50,7 @@
     "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
