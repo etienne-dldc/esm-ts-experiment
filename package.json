@@ -1,6 +1,6 @@
 {
   "name": "@etienne-dldc/esm-ts-experiment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Package to experiment with ESM in NPM packages",
   "keywords": [],
   "homepage": "https://github.com/etienne-dldc/esm-ts-experiment#readme",
