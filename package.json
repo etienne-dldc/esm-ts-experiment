@@ -21,10 +21,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p ./tsconfig.build.json",
     "lint": "ts-standard",
+    "typecheck": "tsc --noEmit",
     "lint:fix": "ts-standard --fix",
-    "prepublish": "tsc",
+    "prepublish": "yarn build",
     "release": "yarn test && yarn build && np",
     "test": "ts-standard && c8 --reporter=html --reporter=text ava",
     "test:watch": "ava --watch"
