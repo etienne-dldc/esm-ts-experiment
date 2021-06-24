@@ -1,6 +1,6 @@
-import { createNum } from './internal.js'
-export { TestComponent } from './Component'
+import { createNum } from "./internal.js";
+export { TestComponent } from "./Component.js";
 
-export function createNums (): number[] {
-  return [createNum(), createNum()]
+export function createNums(): number[] {
+  return [createNum(), createNum()];
 }
