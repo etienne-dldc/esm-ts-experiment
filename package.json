@@ -26,7 +26,7 @@
     "typecheck": "tsc --noEmit",
     "lint:fix": "ts-standard --fix",
     "prepublish": "yarn build",
-    "release": "yarn test && yarn build && np",
+    "release": "yarn build && np",
     "test": "ts-standard && c8 --reporter=html --reporter=text ava",
     "test:watch": "ava --watch"
   },
