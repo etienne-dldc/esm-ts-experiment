@@ -45,6 +45,7 @@
     "tslib": "^2.2.0"
   },
   "devDependencies": {
+    "@types/react": "^17.0.11",
     "ava": "^3.15.0",
     "c8": "^7.7.2",
     "np": "^7.5.0",
@@ -58,5 +59,8 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0"
   }
 }
