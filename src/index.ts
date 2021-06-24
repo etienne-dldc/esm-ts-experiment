@@ -1,5 +1,5 @@
-import { createNum } from "./internal.js";
+import { createNum } from './internal.js'
 
-export function createNums() {
-  return [createNum(), createNum()];
+export function createNums (): number[] {
+  return [createNum(), createNum()]
 }
