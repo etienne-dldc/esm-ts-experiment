@@ -29,46 +29,6 @@
     "test": "yarn lint && c8 --reporter=html --reporter=text ava",
     "test:watch": "ava --watch"
   },
-  "prettier": {
-    "printWidth": 120,
-    "tabWidth": 2,
-    "useTabs": false
-  },
-  "eslintConfig": {
-    "parser": "@typescript-eslint/parser",
-    "settings": {
-      "react": {
-        "version": "detect"
-      }
-    },
-    "plugins": [
-      "@typescript-eslint"
-    ],
-    "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended",
-      "plugin:react/recommended",
-      "plugin:react-hooks/recommended",
-      "prettier"
-    ],
-    "root": true
-  },
-  "ava": {
-    "extensions": {
-      "ts": "module",
-      "tsx": "module"
-    },
-    "files": [
-      "src/**/*.test.ts",
-      "src/**/*.test.tsx"
-    ],
-    "nodeArguments": [
-      "--loader=ts-node/esm"
-    ],
-    "nonSemVerExperiments": {
-      "configurableModuleFormat": true
-    }
-  },
   "dependencies": {
     "tslib": "^2.2.0"
   },
