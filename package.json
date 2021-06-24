@@ -25,7 +25,7 @@
     "lint": "ts-standard",
     "lint:fix": "ts-standard --fix",
     "prepublish": "tsc",
-    "release": "yarn build && np",
+    "release": "yarn test && yarn build && np",
     "test": "ts-standard && c8 --reporter=html --reporter=text ava",
     "test:watch": "ava --watch"
   },
