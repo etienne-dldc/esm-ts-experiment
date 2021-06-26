@@ -23,8 +23,8 @@
   "scripts": {
     "build": "rimraf dist && tsc -p ./tsconfig.build.json",
     "example:run": "vite example",
-    "lint": "tsc --noEmit && prettier --check src example/src && eslint src example/src",
-    "lint:fix": "prettier --write src example/src && eslint --fix src example/src",
+    "lint": "tsc --noEmit && prettier --check src tests example/src && eslint src tests example/src",
+    "lint:fix": "prettier --write src tests example/src && eslint --fix src tests example/src",
     "release": "yarn build && np",
     "test": "yarn lint && jest --coverage",
     "test:watch": "jest --watch"
